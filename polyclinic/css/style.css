@@ -51,6 +51,12 @@ h1{
     src: url("../font/TildaSans-Black.ttf");
 } 
 
+@font-face {
+    font-family:"TildaSans-SemiBold" ;
+    src: url("../font/TildaSans-Semibold.ttf");
+} 
+
+
 /*------------ импортируем шрифты ----------- */
 
 
@@ -89,7 +95,7 @@ h1{
 }
 
 
-.header button, .container > div:nth-child(1) button{
+.header button{
     font-family:"TildaSans-Regular" ;
     background-color: rgb(255, 255, 255);
     font-size: 130%;
@@ -146,7 +152,7 @@ main{
    text-align: left;
     font-size: 5em;
     font-family:"TildaSans-Bold";
-    padding-bottom: 50px;
+    padding-bottom: 4px;
 }
 
 .container > div:nth-child(1) p{
@@ -168,7 +174,22 @@ main{
     padding-left: 10%;
 }
 
+.container > div:nth-child(1) button{
+    background-color: rgb(53, 169, 246); 
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family:"TildaSans-SemiBold" ;
+    padding: 15px 25px;
+    font-size: 150%;
+}
 
+.container > div:nth-child(1) button:hover{
+    background:none;
+    border: 1px solid rgb(86, 86, 208);
+    color: black;
+    transition: 300ms;
+}
 
 
 .container > div:nth-child(2) {
@@ -195,15 +216,18 @@ main{
     max-height: 100%;
 }
 
-.container > div:nth-child(2) h1{
-    font-size:400%;
+.container > div:nth-child(2) h1,div:nth-child(3) h1,div:nth-child(4) h1{
+    font-family:"TildaSans-SemiBold" ;
+    font-size:300%;
     text-align: center;
     padding-bottom: 2%;
 }
 
 #tittle1{
+    font-family:"TildaSans-Bold" ;
     text-align: left;
-    padding: 4% 4% 4% 10%
+    padding: 4% 4% 4% 10%;
+    font-size:360%;
 }
 
 .techology-it-text div,.form-login div{
@@ -229,7 +253,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 180%;
+    font-size: 150%;
     border: 1px solid rgb(72, 172, 150);;
 }
 .form-login input , select {
