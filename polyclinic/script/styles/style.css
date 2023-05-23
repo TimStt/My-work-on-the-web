@@ -1,0 +1,288 @@
+/*------------ настраиваем элементы для всей страницы  ----------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family:"TildaSans-Medium" ;
+}
+
+span,p{
+    line-height: 180%;
+}
+
+footer{
+    background-color: rgb(249, 252, 255);
+    width: 100%;
+    height: 400px;
+}
+
+h1{
+    margin: 0;
+}
+
+/*------------ настраиваем элементы для всей страницы ----------- */
+
+
+/*------------ импортируем шрифты ----------- */
+@font-face {
+    font-family: "TildaSans-Medium";
+    src: url("../font/TildaSans-Medium.ttf");
+}
+@font-face {
+    font-family:"TildaSans-Bold" ;
+    src: url("../font/TildaSans-Bold.ttf");
+}
+@font-face {
+    font-family:"TildaSans-Light" ;
+    src: url("../font/TildaSans-Light.ttf");
+}
+@font-face {
+    font-family:"TildaSans-Regular" ;
+    src: url("../font/TildaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family:"TildaSans-Black" ;
+    src: url("../font/TildaSans-Black.ttf");
+} 
+
+/*------------ импортируем шрифты ----------- */
+
+
+
+
+/*------------ шапка сайта ----------- */
+.header{
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.header img{
+    background-size: cover;
+    max-width: 100px;
+    max-height: 100px; ;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 46%;
+    font-family: "TildaSans-Bold";
+    font-size:150% ;
+    /* align-items: center; */
+}
+
+.header ul li{
+    display: inline-block;
+    z-index: 1;
+}
+
+
+.header button, .container > div:nth-child(1) button{
+    font-family:"TildaSans-Regular" ;
+    background-color: rgb(255, 255, 255);
+    font-size: 130%;
+    border: 1px solid black;
+    padding: 15px 25px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover{
+    color:rgb(116, 188, 215); 
+    transition: 200ms;
+}
+
+.header button:hover{
+    transition: 300ms;
+    background-color:rgb(116, 188, 215);
+    color: rgb(255, 255, 255);
+    border: rgb(116, 188, 215);;
+}
+
+/*------------ шапка сайта ----------- */
+
+
+
+
+/*------------ содержимое сайта ----------- */
+
+main{
+    background-color:rgb(255, 255, 255); 
+}
+
+.container > div:nth-child(1){
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+    width: 100%;
+    height: 53rem;
+    background-color:rgb(240, 248, 251);
+}
+
+.start-img{
+    height: 125%;
+    max-width: 100%;
+    padding-right: 6%;
+}
+
+.container > div:nth-child(1) h1{
+   text-align: left;
+    font-size: 5em;
+    font-family:"TildaSans-Bold";
+}
+
+.container > div:nth-child(1) p{
+    font-size: 170%;
+    font-family:"TildaSans-Regular";
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left ;
+    /* height: 10vh; */
+}
+
+.hero-area{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 100%;
+    height: 40%;
+    align-items: center;
+    padding-left: 10%;
+}
+
+
+.strelki-img{
+    max-height: 80%;
+}
+
+
+.container > div:nth-child(2) {
+   background-color:rgb(255, 255, 255) ;
+    width: 100%;
+    height: 120%;
+}
+.container > div:nth-child(3) {
+   background-color:rgb(255, 255, 255) ;
+    width: 100%;
+}
+
+.techology-it-text,.form-login{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(207, 244, 243);
+    height: 700px;
+    width: 100%;
+}
+
+.techology-it-text img,.form-login img{
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.container > div:nth-child(2) h1{
+    font-size:400%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#tittle1{
+    text-align: left;
+    padding: 4% 4% 4% 10%
+}
+
+.techology-it-text div,.form-login div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+
+.techology-it-text span{
+    font-size: 170%; 
+    text-align: justify;
+    max-width: 80%;
+    font-family:"TildaSans-Light";
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.form-login input , select , .send{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 180%;
+    border: 1px solid rgb(72, 172, 150);;
+}
+.form-login input , select {
+    width: 100%;
+    font-family:"TildaSans-Light";
+}
+
+.form-login button:hover{
+    transition: 300ms;
+    background-color:rgb(72, 172, 150);
+    color: rgb(255, 255, 255);
+    border:rgb(72, 172, 150);
+}
+input:focus,select:focus{
+    outline: none;
+}
+
+
+.send{
+    font-family:"TildaSans-Regular" ;
+    background-color: rgb(185, 220, 244);
+    border: 1px solid black;
+    padding: 15px 25px;
+    border-radius: 4px;
+    margin: 0 auto; 
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------ содержимое сайта ----------- */
+
+/*------------ футер сайта ----------- */
+
+
+
+
+/*------------ футер сайта ----------- */
