@@ -1,0 +1,313 @@
+/* -------- 1. общие настройки -------- */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+    margin:0; 
+    padding:0;
+}
+body{
+    font-family: "Lato600";
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+/* -------- 1. общие настройки -------- */
+
+
+
+/*--------- 2. импортируем шрифты --------- */
+
+@font-face {
+    font-family: "Lato600";
+    src: url("../fonts/Lato-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Lato700";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato300";
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+/*--------- 2. импортируем шрифты --------- */
+
+
+
+/* --------- 3. настройка шапки --------- */
+
+.header {
+    color: #3C3C3C;
+    width: 100%;
+    
+    background: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    padding: 28px 246px 28px 206px;
+    font-size: 20px;
+    line-height: 24px;  
+    font-family: "Lato700";
+    gap:30px;
+    margin: 0;
+}
+
+
+.callback-btn:hover{
+    background-color:#18B5DC ;
+    color: rgb(255, 255, 255);
+    border: #18B5DC;
+    transition:400ms;
+}
+
+.menu li a:hover{
+    color: #18B5DC;
+    transition:250ms;
+}
+
+
+.callback-btn{
+    width: 130px;
+    height: 42px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+
+.logo{
+    max-width: 170px;
+    max-height: 60px;
+    padding: 0;
+}
+
+/* --------- 3.  настройка шапки --------- */
+
+
+/* --------- 4. содержимое сайта --------- */
+
+
+.container{
+    background-color: #F6F6F6;
+    width: 100%;
+}
+
+.text-headline{
+    text-align: center;
+}
+
+.tittle{
+    margin: 0;
+    font-family: "Lato700";
+    color: #3C3C3C;
+}
+ 
+.line{
+    width: 45px;
+    height: 4px;
+    background: #DDDBDB;
+    margin-top: 15px;
+    margin-bottom: 38px;
+    border: none;
+}
+
+.container-text{
+    font-family: "Lato300";
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 24px;
+    color:#3C3C3C;
+    max-width: 570px;
+} 
+
+
+.img-headline,.John-Handson-block{
+    display: flex;
+    justify-content: center;
+}
+.text-headline-img{
+    max-width: 1170px;
+    display: flex;
+    justify-content:space-between;
+    text-align: left;
+    margin: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+.text-headline-img label, span{
+    font-family: "Lato700";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.text-headline-img span{
+    font-family: "Lato300";
+}
+
+
+.text-headline-img p{
+    width: 270px;
+    margin: 0;
+}
+
+.John-Handson-block{
+    gap:0 4px;
+    align-items: center;
+    background-color:  #18B5DC;
+    width: 270px;
+    height: 270px;
+}
+
+.John-Handson-block button{
+    margin: 0 auto;
+}
+
+
+.img-headline{
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.John-Handson-block button, .container-footer button{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-color:  #5DCBE6;
+    border: none;
+    margin: 0;
+}
+
+/* -- установка и смена картинок в блоках при наведении -- */
+
+.John-Handson-block button:nth-child(1){
+    background-image: url("../img/twitter-icon.svg");
+}
+.John-Handson-block button:nth-child(2){
+    background-image: url("../img/facebook-icon.svg");
+}
+.John-Handson-block button:nth-child(3){
+    background-image: url("../img/insta-icon.svg");
+}
+
+.John-Handson-block button:nth-child(1):hover{
+    background-image: url("../img/twitter-icon-blue.svg");
+}
+.John-Handson-block button:nth-child(2):hover{
+    background-image: url("../img/facebook-icon-blue.svg");
+}
+.John-Handson-block button:nth-child(3):hover{
+    background-image: url("../img/insta-icon-blue.svg");
+}
+
+
+
+.John-Handson-block button:hover{
+    background-color:#FFFFFF;
+    transition: 300ms;
+}
+
+
+/* -- установка и смена картинок в блоках при наведении -- */
+
+/* --------- 4. содержимое сайта --------- */
+
+
+/*--------- 5. подвал сайта --------- */
+
+footer{
+    width: 100%;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    height: 100%;
+}
+
+.network-btn button{
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #18B5DC;
+}
+
+.network-btn{
+    display: flex;
+    gap: 0 10px;
+}
+
+.network-btn button:hover{
+    background-color: #18B5DC;
+    transition: 360ms;
+}
+
+#menu-footer{
+    padding:0 0 28px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#logo-footer{
+    padding-bottom: 20.93px;
+}
+
+/* -- установка и смена картинок в блоках при наведении -- */
+
+.network-btn button:nth-child(1){
+    background-image: url("../img/twitter-icon-blue.svg");
+    
+}
+.network-btn button:nth-child(2){
+    background-image: url("../img/facebook-icon-blue.svg");
+}
+.network-btn button:nth-child(3){
+    background-image: url("../img/insta-icon-blue.svg");
+}
+.network-btn button:nth-child(4){
+    background-image: url("../img/in-blue.svg");
+}
+.network-btn button:nth-child(5){
+    background-image: url("../img/telegram-iblue.svg");
+}
+
+
+.network-btn button:nth-child(1):hover{
+    background-image: url("../img/twitter-icon.svg");
+}
+.network-btn button:nth-child(2):hover{
+    background-image: url("../img/facebook-icon.svg");
+}
+.network-btn button:nth-child(3):hover{
+    background-image: url("../img/insta-icon.svg");
+}
+.network-btn button:nth-child(4):hover{
+    background-image: url("../img/in-icon-white.svg");
+}
+.network-btn button:nth-child(5):hover{
+    background-image: url("../img/telega-white-icon.svg");
+}
+/* -- установка и смена картинок в блоках при наведении -- */
+
+/* ---------- 5. подвал сайта ----------*/
