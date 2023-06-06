@@ -1,12 +1,4 @@
 
-// при вызове метода страница плавно скролиться вниз к форме отправки
-
-const btnForm = document.getElementById('btn-hero-area');
-const formLogin = document.getElementById('form-login');
-btnForm.onclick = function () {
-    formLogin.scrollIntoView({ behavior: "smooth" });
-};
-
 const btnFormSend = document.getElementById('send');
 const textBoxName = document.getElementById('nameInput');
 const textBoxNumber = document.getElementById('numberInput');
@@ -17,3 +9,28 @@ btnFormSend.onclick = function(event){
         alert("введите данные");
     }
 }
+
+
+
+// карусель
+
+let offset = 0; // смещение от левого края
+const lineSlide = document.querySelector('.slider-reviews-line')
+
+
+document.getElementById('btn-reviews-right').addEventListener('click',function(){
+    offset+=450;
+    if(offset > 1350){
+        offset = 0;
+    }
+    lineSlide.style.left = -offset + 'px';
+    
+});
+document.getElementById('btn-reviews-left').addEventListener('click',function(){
+    offset-=450;
+    if(offset < 0){
+        offset = 1350;
+    }
+    lineSlide.style.left = -offset + 'px';
+   
+});

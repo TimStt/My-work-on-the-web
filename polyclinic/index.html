@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/388e79c9e1.js" crossorigin="anonymous" defer></script>
+    <script src="javascript/main.js" defer></script>
+    
     <link rel="stylesheet" href="css/style.css">
+
     <title>Поликлиника</title>
 </head>
 <body>
@@ -18,7 +23,7 @@
                     <li><a href="#">Детское отделение</a></li>
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">Наша команда</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#reviews-form">Отзывы</a></li>
                 </ul>
                 <button>Связаться c нами</button>
             </nav>
@@ -34,7 +39,7 @@
                             Запишитесь на прием к любому врачу и получите онлайн консультацию от наших специалистов всего в один
                             клик!
                         </p>
-                        <button id="btn-hero-area">Записаться на прием</button>
+                        <a id="btn-hero-area" href="#form-login">Записаться на прием</a>
                     </div>
         
                     <img src="img/dfdf (1).png" class="start-img">
@@ -76,16 +81,6 @@
                         </div>
                         <img src="img/future.png" alt="что то ">
                     </div>
-                    <section>
-                        <h1>Отзывы о нас</h1>
-                        <div>
-                            <img src="img/avatar.png" alt="">
-                            <h2>Олег, 20 лет</h2>
-                            <p>
-                                Всё супер! Добавить больше нечего.
-                            </p>
-                        </div>
-                    </section>
                     <div class="form-login" id="form-login" style="background-color: rgb(185, 220, 244);">
                         <img src="img/form-img.png" alt="очередь">
                         <div>
@@ -114,6 +109,88 @@
                             </form>
                         </div>
                     </div>
+                    <h1 class="tittle-reviews-form">Более 90% положительных отзывов</h1>
+                    <section class="reviews-form" id="reviews-form">
+                        <i class="fa-solid fa-chevron-left" id="btn-reviews-left"></i>
+                        <div class="slider">
+                            <div class="slider-reviews-line">
+                                <div class="reviews-slide" id="reviews-oleg">
+                                    <img src="img/avatar-olegRukhov.jpg" alt="">
+                                    <h2>Олег Рухов</h2>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                    </div>
+                                    <p>
+                                        Всё супер! Добавить больше нечего.
+                                    </p>
+                                </div>
+                                <div class="reviews-slide" id="reviews-ek">
+                                    <img src="img/avatar-ekaterina.jpg" alt="">
+                                    <h2>Екатерина Злотовласова</h2>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: rgb(106, 106, 103);"></i>
+                                    </div>
+                                    <p>
+                                        Были у Корнева Антона Сергеевича,понравилось!Не только деток лечит,но и взрослых.Ездила с мамой 1949
+                                        г.Доктор всё
+                                        доступно объяснил,назначил правильное лечение,результат порадовал, Слава Богу!Рекомендую!!!
+                                        Из минусов;парковочных мест для мед.центра не предусмотренно.Рядом почта России и автомастерская,думаю в
+                                        основном их
+                                        сотрудники паркуются на находящейся рядом территории.Приходилось искать место парковки и немного
+                                        погулять,чтобы
+                                        добраться до медцентра
+                                    </p>
+                                </div>
+                                <div class="reviews-slide" id="reviews-ul">
+                                    <img src="img/avatar-Ulia.jpeg" alt="">
+                                    <h2>Юлия Блинова</h2>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                    </div>
+                                    <p>
+                                        Добрый день! Обратилась к гинекологу Тимохиной Александре Сергеевне, осталась довольна. Замечательный и
+                                        очень
+                                        внимательный врач, приятна в общении, хочет помочь и помогает.Любит свою работу и проникается к
+                                        пациентам.Огромное ей
+                                        спасибо! Отличный медицинский центр!
+                                    </p>
+                                </div>
+                                <div class="reviews-slide" id="reviews-dima">
+                                    <img src="img/avatar-Dima.jpg" alt="">
+                                    <h2>Дмитрий Маликов</h2>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                                    </div>
+                                    <p>
+                                        Хочу выразить Огромную Благодарность стоматологам Косиновой Е. А, Коцюбинскому В. И, Анестезиологу Дунаеву
+                                        П. А. и
+                                        медицинской сестре! За Ваш Профессионализм, за чуткое отношение к пациенту и родителям! Спасибо за здоровые,
+                                        вылеченные
+                                        зубки моей дочки! Делали с наркозом, всё прошло прекрасно! Мы нашли своих профессионалов! Теперь только к
+                                        Вам!!! С
+                                        Уважением Литвинова И.В.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-left fa-rotate-180" id="btn-reviews-right"></i>
+                    </section>
                 </div>
         
         </main>
@@ -133,6 +210,5 @@
             </div>
         </footer>
     </div>
-    <script src="javascript/main.js"></script>
 </body>
 </html>
