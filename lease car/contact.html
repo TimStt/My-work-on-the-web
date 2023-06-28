@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/second.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/choosecar.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <title>Lease DM</title>
 </head>
@@ -14,14 +16,19 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="" class="header__inner__logo-link">
+                <a href="index.html" class="header__inner__logo-link">
                     <img class="logo" src="img/logo.svg" alt="">
                 </a>
 
                 <nav class="menu">
+                    <button class="menu__button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="" class="menu__list-link">NEW CARS</a>
+                            <a href="choosecar.html" class="menu__list-link">NEW CARS</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="" class="menu__list-link">PRE-OWNED CARS</a>
@@ -33,18 +40,48 @@
                             <a href="" class="menu__list-link">LEASE VS BUY</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="" class="menu__list-link">CONTACT US</a>
+                            <a href="contact.html" class="menu__list-link menu__list-link-active">CONTACT US</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="header__content">
-                
-            </div>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="contact">
+            <div class="container">
+                <h2 class="section-tittle contact__tittle">Contact Us</h2>
+                <p class="contact__text">Feel free to contact us with questions, potencial partnerships or media inquiries</p>
+                <form action="" class="contact__form">
+                    <input type="text" class="contact__form-input" placeholder="Name">
+                    <input type="email" class="contact__form-input" placeholder="E-mail">
+                    <textarea class="contact__form-textarea" placeholder="Your text"></textarea>
+                    <button class="selected__btn contact__form-btn" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <img src="img/blog-1.jpg" alt="" class="blog__item-img">
+                        <h3 class="choose-car__tittle blog__item-tittle">An easier way to buy your next Toyota</h3>
+                        <a href="#" class="blog__item-link">more</a>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/blog-2.jpg" alt="" class="blog__item-img">
+                        <h3 class="choose-car__tittle blog__item-tittle">An easier way to buy your next Toyota</h3>
+                        <a href="#" class="blog__item-link">more</a>
+                    </div>
+                </div>
+                <div class="blog__btn">
+                    <button class="selected__btn">
+                        SHOW MORE
+                    </button>
+                </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <nav class="footer__menu">

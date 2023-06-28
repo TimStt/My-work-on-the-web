@@ -1,0 +1,201 @@
+.choose-car__tittle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.selected__btn{
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 13px 61px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
+
+.choose-car{
+    margin: 100px auto 150px;
+    text-align: center;
+}
+.choose-car__menu{
+    margin: 50.09px 0 100.24px;
+    color: black;
+}
+
+.choose-car__menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.choose-car__menu-link-active,.menu__list-link-active{
+    color:var(--blue-color);
+}
+
+
+.choose-car__menu-link:hover, .menu__list-link:hover{
+    color:var(--blue-color);
+    transition: ease-in-out 300ms all;
+}
+
+.choose-car__menu__catalog {
+    display: none;
+    margin-bottom: 72.47px;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 100px 40px;
+}
+.choose-car__menu__catalog-active{
+    display: grid;
+}
+
+.menu__catalog-item{
+    border: 1px solid var(--blue-color); 
+}
+
+.menu__catalog-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid var(--blue-color); 
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.menu__catalog-btn:hover,.selected__btn:hover,.content__top-btn:hover{
+    background-color: var(--blue-color);
+    color: var(--color-white);
+    transition: ease-in-out 350ms all;
+}
+
+.menu__catalog-price,.menu__catalog-text, .menu__catalog-tittle{
+    padding-top: 20px;
+}
+
+.blog{
+     margin: 150px 0 164px;
+}
+
+.blog__items{
+    display: flex;
+    gap: 40px;
+}
+
+.blog__item-tittle{
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+.menu__catalog-img,.blog__item-img{
+    width: 100%;
+        
+}
+
+.blog__item{
+    position: relative;
+}
+.blog__btn{
+    text-align: center;
+    margin-top: 70px;
+}
+.blog__item-link:hover{
+    background-color: var(--main-color);
+    transition: ease-in-out 350ms all;
+}
+
+
+
+.blog__item-link{
+    display: inline-block;
+    max-width: 80px;
+    width: 100%;
+    background-color: var(--blue-color);
+    color: var(--color-white);
+    padding: 4px;
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 1240px){
+   .blog__items {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .blog__item {
+        margin: 35px;
+    }
+}
+@media (max-width: 1130px){
+    .choose-car__menu__catalog {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        padding: 0 10px;
+        gap: 82px 40px;
+    }
+    
+}
+@media (max-width: 940px) {
+    .choose-car__menu-list {
+        gap: calc(28px + (55 - 22) * ((100vw - 360px) / (940 - 360)));
+        font-size: calc(16px + (23 - 16) * ((100vw - 360px) / (940 - 360)));
+    }
+    
+}
+@media (max-width: 690px) {
+    .choose-car__menu-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(28px + (55 - 22) * ((100vw - 360px) / (690 - 360)));
+        font-size: calc(16px + (23 - 16) * ((100vw - 360px) / (690 - 360)));
+    }
+    .blog__item-tittle {
+        font-size: calc(15px + (24 - 15) * ((100vw - 360px) / (690 - 360)));
+        margin-top: calc(7px + (30 - 7) * ((100vw - 360px) / (690 - 360))); 
+        margin-bottom: 44px;
+    }
+    .blog__item-link,.selected__btn {
+        font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (690 - 360)));
+    }
+    .blog__item {
+        margin:  calc(6px + (35 - 6) * ((100vw - 360px) / (690 - 360)));
+    }
+    .selected__btn {
+        padding: 11px 56px;
+         
+}
+
+    
+}
+
+@media (max-width: 840px){
+    .choose-car__menu__catalog {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    
+}
+@media (max-width: 590px){
+    .choose-car__menu__catalog {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+     .choose-car__menu-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .choose-car__menu {
+        margin: 50.09px 0 73.24px;
+    }
+    .choose-car {
+        margin: 73px auto 150px;
+    }
+    .blog {
+        margin: 117px 0 125px;
+}
+}

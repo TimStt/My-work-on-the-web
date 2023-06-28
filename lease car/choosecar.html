@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/second.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/choosecar.css">
 
     <title>Lease DM</title>
 </head>
@@ -14,14 +15,19 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="" class="header__inner__logo-link">
+                <a href="index.html" class="header__inner__logo-link">
                     <img class="logo" src="img/logo.svg" alt="">
                 </a>
 
                 <nav class="menu">
+                    <button class="menu__button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="" class="menu__list-link">NEW CARS</a>
+                            <a href="choosecar.html" class="menu__list-link menu__list-link-active">NEW CARS</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="" class="menu__list-link">PRE-OWNED CARS</a>
@@ -33,18 +39,587 @@
                             <a href="" class="menu__list-link">LEASE VS BUY</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="" class="menu__list-link">CONTACT US</a>
+                            <a href="contact.html" class="menu__list-link">CONTACT US</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="header__content">
-                
-            </div>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="choose-car">
+            <div class="container">
+                <h2 class="section-tittle choose-car__section__tittle">Choose your car</h2>
+                <nav class="choose-car__menu">
+                    <ul class="choose-car__menu-list choose-car__tittle">
+                        <li class="choose-car__menu-item">
+                            <a href="#" class="choose-car__menu-link choose-car__menu-link-active">
+                                Car and Minivan
+                            </a>
+                        </li>
+                        <li class="choose-car__menu-item">
+                            <a href="#" class="choose-car__menu-link">
+                                Trucks
+                            </a>
+                        </li>
+                        <li class="choose-car__menu-item">
+                            <a href="#" class="choose-car__menu-link">
+                                Crossovers & SUVs
+                            </a>
+                        </li>
+                        <li class="choose-car__menu-item">
+                            <a href="#" class="choose-car__menu-link">
+                                Electrified
+                            </a>    
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="choose-car__menu__catalog choose-car__menu__catalog-active">
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-1.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Crown 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 650/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-2.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Prius Prime 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 450/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li><li class="menu__catalog-item">
+                        <img src="img/choose-car-3.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Prius 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 400/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-4.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Hyundai Kona 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $510/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-5.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Ford Explorer 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $1,013/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li><li class="menu__catalog-item">
+                        <img src="img/choose-car-6.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Santa  Fe 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $739/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-7.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            KIA Niro 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 33600
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $554/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-8.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Chevrolet Silverado
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 62260
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $1,032/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li><li class="menu__catalog-item">
+                        <img src="img/choose-car-9.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Honda CR-V 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 35650
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $591/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-10.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Hyundai Tucson
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 31885
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $528/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-11.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Chevrolet Equinox 
+                        </h2>   
+                        <p class="menu__catalog-text">
+                            starting from $ 28430
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $471/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li><li class="menu__catalog-item">
+                        <img src="img/choose-car-12.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Jeep Wrangler 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 60000
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $997/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                </ul>
+                <ul class="choose-car__menu__catalog">
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-1.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Crown 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 650/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-2.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Prius Prime 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 450/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-3.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Prius 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 400/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                   
+                </ul>
+                <ul class="choose-car__menu__catalog">
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-1.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Crown 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 650/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-2.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Prius Prime 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 450/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-3.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Prius 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 400/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-4.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Hyundai Kona 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $510/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-5.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Ford Explorer 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $1,013/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-6.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Santa Fe 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $739/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-7.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            KIA Niro 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 33600
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $554/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-8.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Chevrolet Silverado
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 62260
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $1,032/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-9.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Honda CR-V 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 35650
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $591/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-10.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Hyundai Tucson
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 31885
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $528/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-11.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Chevrolet Equinox
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 28430
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $471/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-12.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Jeep Wrangler 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 60000
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $997/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                </ul>
+                <ul class="choose-car__menu__catalog">
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-1.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Crown 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 650/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-2.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Prius Prime 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 450/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-3.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Toyota Prius 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $ 400/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-4.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Hyundai Kona 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $510/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-5.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Ford Explorer 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $1,013/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-6.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            Santa Fe 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 39900
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $739/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                    <li class="menu__catalog-item">
+                        <img src="img/choose-car-7.jpg" alt="" class="menu__catalog-img">
+                        <h2 class="choose-car__tittle menu__catalog-tittle">
+                            KIA Niro 2023
+                        </h2>
+                        <p class="menu__catalog-text">
+                            starting from $ 33600
+                        </p>
+                        <p class="menu__catalog-price choose-car__tittle">
+                            $554/mo
+                        </p>
+                        <a class="menu__catalog-btn">
+                            see details
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="selected__btn">
+                    SHOW MORE
+                </button>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <img src="img/blog-1.jpg" alt="" class="blog__item-img">
+                        <h3 class="choose-car__tittle blog__item-tittle">An easier way to buy your next Toyota</h3>
+                        <a href="#" class="blog__item-link">more</a>
+                    </div>
+                    <div class="blog__item">
+                        <img src="img/blog-2.jpg" alt="" class="blog__item-img">
+                        <h3 class="choose-car__tittle blog__item-tittle">An easier way to buy your next Toyota</h3>
+                        <a href="#" class="blog__item-link">more</a>
+                    </div>
+                </div>
+                <div class="blog__btn">
+                    <button class="selected__btn">
+                        SHOW MORE
+                    </button>
+                </div>    
+        </section>
+
+
+    </main>
     <footer class="footer">
         <div class="container">
             <nav class="footer__menu">

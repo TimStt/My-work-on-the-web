@@ -1,4 +1,4 @@
-
+'use strict'
 // ------ объявление переменных ------
 const images = document.querySelectorAll('.slider .slider__squere img'),
     firstBtn = document.getElementById('firstBtn'),
@@ -10,24 +10,23 @@ const images = document.querySelectorAll('.slider .slider__squere img'),
     clickAreaRight = document.querySelector('.clickAreaRight'),
     clickAreaLeft= document.querySelector('.clickAreaLeft'),
     slider = document.getElementById('slider'),
-    slider__pagination= document.querySelectorAll('.slider__pagination button');                                   
+    slider__pagination= document.querySelectorAll('.slider__pagination button'),
+    btn_menu = document.querySelector('.menu__button'),
+    menu_header = document.querySelector('.menu__list'),
+    header = document.querySelector('.header');                                   
 
 let flgMouseUp = false;
 let flgClick = false;
+let sliderActiv = false;
 
+let heightSlider;
 
 //счетчик
 let count = 0;
-
 let width;
-
-// ------ цвета для слайдера ------
-const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-const defoltColor = getComputedStyle(document.documentElement).getPropertyValue('--color-white');
 
 // метод адаптации самого слайдера 
 function init(){
-    console.log('resize');
     width =  document.querySelector('.slider').offsetWidth;
     slider__squere.style.width = width*images.length+ 'px';
     images.forEach(item =>{
@@ -35,10 +34,22 @@ function init(){
         item.style.height = 'auto';
     });
     scrollSlide()
-  
+    if(width <= 890){
+        images[0].src = "img/img-slider-bmw-mobile.jpg";
+        images[1].src = "img/img-slider-jeep-mobile.jpg";
+        images[2].src = "img/img-slider-crown-mobile.jpg";
+        images[3].src = "img/img-slider-santafe-mobile.jpg";
+        clickAreaSize();
+        
+    }
+    else{
+        images[0].src = "img/img-slider-bmw.jpg";
+        images[1].src = "img/img-slider-jeep.jpg";
+        images[2].src = "img/img-slider-crown.jpg";
+        images[3].src = "img/img-slider-santafe.jpg";
+    }
+    heightSlider =  document.querySelector('.slider').offsetHeight;
     
-    
-    console.log(slider__squere.style.width);
 }
 
 // адаптируем зоны клика слайдера при полной загрузк страницы 
@@ -50,12 +61,18 @@ window.addEventListener('load' , function(){
 window.addEventListener('resize', function(){
     init();
     clickAreaSize();
-    
+});
+window.addEventListener('pageshows', function(){
+    init();
+    clickAreaSize();
+});
+window.addEventListener('beforeunload', function(){
+    console.log("рвпрпвпр");
+    clickAreaSize();  
+    init();
 });
 
-
 function scrollSlide(){
-    console.log(count);
     slider__squere.style.transform = 'translate(-'+ count * width + 'px';
 }
 
@@ -68,13 +85,17 @@ setInterval(()=>{
 
 } ,8000);
 
-
 // метод адаптации зон клика 
 function clickAreaSize(){
-    heightSlider = window.getComputedStyle(slider);
+    
+    localStorage.setItem('myHeght',heightSlider)
+    let storeHeight = localStorage.getItem('myHeght')
     clickArea.forEach(area =>{
+        console.log(width);
+        console.log(storeHeight);
+
         area.style.width = width/2 + 'px';
-        area.style.height = heightSlider.height ;
+        area.style.height = storeHeight + 'px' ;
         
         area.addEventListener('mouseover',()=>{
             flgMouseUp = true;
@@ -84,13 +105,7 @@ function clickAreaSize(){
             flgClick = false;
         })
     });
-
-    // content__top.forEach(content =>{
-    //     content.style.height = heightSlider.height;
-    // })
 }
-
-
 
 // перемещение слайдов вперед
 function nextSlide(){
@@ -156,5 +171,24 @@ slider__pagination.forEach((pag,countPag) =>{
     })
 });
 
+// присваиваем класс для активации меню шапки 
 
+btn_menu.addEventListener('click',function(){
+    console.log("аошрвора");
+    menu_header.classList.toggle('menu__header-active');
+    btn_menu.classList.toggle('menu__button-active');
+    document.querySelector('body').classList.toggle('body-hidden')
+    // header.classList.toggle('header-active');
 
+})
+// window.onload = function() {
+//     heightSlider = parseInt(slider.height);
+//     const observer = new ResizeObserver(entries =>{
+//     for(let entry of entries ){
+//         const target = entry.target;
+//         heightSlider = target.getBoundingClientRect().height;
+//     }
+    
+// });
+// observer.observe(slider);
+// }

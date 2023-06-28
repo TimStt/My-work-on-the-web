@@ -34,3 +34,16 @@ document.getElementById('btn-reviews-left').addEventListener('click',function(){
     lineSlide.style.left = -offset + 'px';
    
 });
+
+
+let massiv = [2, 4, 5, 7676, 3, 5, 2, 4, 9, 0, 2, 45, 7676];
+let count = Math.max(massiv[0, massiv.length-1]);
+console.log('Максимальное значение: ' + count );
+
+massiv.forEach(function(mas, index){
+    console.log("значение: " + mas + ' индекс: ' + index);
+    if(mas === count){
+        console.log('индекс: ' + index )
+    }
+    
+})

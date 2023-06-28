@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/choosecar.css">
 
     <title>Lease DM</title>
 </head>
@@ -16,14 +17,19 @@
         <header class="header header-main">
             <div class="container">
                 <div class="header__inner">
-                    <a href="" class="header__inner__logo-link">
+                    <a href="index.html" class="header__inner__logo-link">
                         <img class="logo" src="img/logo.svg" alt="">
                     </a>
 
                     <nav class="menu">
+                        <button class="menu__button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a href="" class="menu__list-link">NEW CARS</a>
+                                <a href="choosecar.html" class="menu__list-link">NEW CARS</a>
                             </li>
                             <li class="menu__list-item">
                                 <a href="" class="menu__list-link">PRE-OWNED CARS</a>
@@ -35,7 +41,7 @@
                                 <a href="" class="menu__list-link">LEASE VS BUY</a>
                             </li>
                             <li class="menu__list-item">
-                                <a href="" class="menu__list-link">CONTACT US</a>
+                                <a href="contact.html" class="menu__list-link">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,13 +66,13 @@
                     <div class="clickAreaRight"></div>
                 </div>
             </div>
-            <section class="slider" id="slider">
-                <div class="slider__squere">
-                    <div class="slide slide_active"><img src="img/img-slider-bmw.jpg" alt=""
+            <section class="slider">
+                <div class="slider__squere" id="slider">
+                    <div class="slide slide_active" ><img src="img/img-slider-bmw.jpg" alt=""
                             class="slider__slide slider_active"></div>
-                    <div class="slide"><img src="img/img-slider-jeep.jpg" alt="" class="slider__slide"></div>
-                    <div class="slide"><img src="img/img-slider-crown.jpg" alt="" class="slider__slide"></div>
-                    <div class="slide"><img src="img/img-slider-santafe.jpg" alt="" class="slider__slide"></div>
+                    <div class="slide"  ><img src="img/img-slider-jeep.jpg" alt="" class="slider__slide" ></div>
+                    <div class="slide" ><img src="img/img-slider-crown.jpg" alt="" class="slider__slide" ></div>
+                    <div class="slide" ><img src="img/img-slider-santafe.jpg" alt="" class="slider__slide" ></div>
                 </div>
 
             </section>
@@ -76,13 +82,13 @@
                     <h2 class="section-tittle">
                         Why Lease with D&M?
                     </h2>
-                    <ul class="why-lease__list">
+                    <ul class="why-lease__important-things-list">
                         <li class="why-lease__list-item">
                             <img src="img/why-lease-1.svg" alt="why-lease-1" class="why-lease__list-item__img">
                             <h3 class="why-lease__list-item__tittle">
                                 Top Dealers
                             </h3>
-                            <p class="why-lease__list-item__text">
+                            <p class="section__list-item__text">
                                 TrueCar Certified Dealers compete for your business by providing discounted pricing on
                                 in-stock inventory.
                             </p>
@@ -92,7 +98,7 @@
                             <h3 class="why-lease__list-item__tittle">
                                 Discounted Pricing
                             </h3>
-                            <p class="why-lease__list-item__text">
+                            <p class="section__list-item__text">
                                 View local inventory from the comfort of home and get access to guaranteed savings on
                                 the car of your choice.
                             </p>
@@ -102,7 +108,7 @@
                             <h3 class="why-lease__list-item__tittle">
                                 Lower Payments
                             </h3>
-                            <p class="why-lease__list-item__text">
+                            <p class="section__list-item__text">
                                 Get discounted pricing when you shop for a car or truck using TrueCar and save on your
                                 lease payment.
                             </p>
@@ -112,7 +118,7 @@
                             <h3 class="why-lease__list-item__tittle">
                                 Easy Upgrade
                             </h3>
-                            <p class="why-lease__list-item__text">
+                            <p class="section__list-item__text">
                                 Easy to upgrade to the newest vehicle model every few years if you would like to be
                                 modern and comfortable
                             </p>
@@ -121,7 +127,101 @@
 
                 </div>
             </section>
-            <section class="HowWorkContent"></section>
+            <section class="howWorkContent">
+                <div class="container container__howWorkContent">
+                    <h2 class="section-tittle section-tittle_howWorkContent ">
+                        How Does Leasing Work?
+
+                    </h2>
+                    <p class="section__list-item__text">
+                        Leasing a vehicle is essentially entering into a long term rental agreement for that vehicle.
+                        Unlike a traditional car
+                        purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle
+                        from the dealer on your
+                        behalf and then you make monthly payments to the leasing company for the duration of your lease.
+                        Some leases however, do
+                        provide the option to purchase the vehicle at the end of the lease.
+                    </p>
+                    <h3 class="howWorkContent__section-tittle">
+                        Similar to a short term car rental, there are rules that define:
+                    </h3>
+                    <ol class="howWorkContent__section__list">
+                        <li class="howWorkContent__section__list-item">
+                            <p class="section__list-item__text howWorkContent__section-text">
+                                How much you can drive, stated as annual miles (excess miles are charged at a specified
+                                rate)
+                            </p>
+                        </li>
+                        <li class="howWorkContent__section__list-item">
+                            <p class="section__list-item__text howWorkContent__section-text">
+                                Types of damage that you may be liable for at the end of your lease
+                            </p>
+                        </li>
+                        <li class="howWorkContent__section__list-item">
+                            <p class="section__list-item__text howWorkContent__section-text">
+                                The procedures and costs when you return the vehicle at the end of your lease
+                            </p>
+                        </li>
+                    </ol>
+                    <p class="section__list-item__text">
+                        Lease contracts are a commitment and ending them early can be difficult and expensive so it is
+                        important to consider
+                        your circumstances carefully before you decide.
+                    </p>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <h2 class="section-tittle video_important_things-tittle">WELCOME TO D&M LEASING</h2>
+                    <h3 class="video__section-tittle">Find out how easy it is to lease from D&M</h3>   
+                    <div class="video-content">
+                        <p>there should be a video here, but something went wrong..</p>
+                    </div>
+                    <!-- <iframe class="video-content" width="1000" height="500" src="https://www.youtube.com/embed/D3c7fCZGwFE?controls=0&amp;start=64"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> -->
+                </div>   
+            </section>
+
+            <section class="important-things">
+                <div class="container">
+                    <h2 class="section-tittle video__important-things__tittle">
+                        Important Things to Consider
+                    </h2>
+                    <p class="important_things-text section__list-item__text">
+                        Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle.
+                        Below are some important factors that may influence your decision.
+                    </p>
+                    <ul class="important-things__list">
+                        <li class="important-things__list-item">
+                            <img src="img/important-things-1.jpg" alt="" class="important-things__list-img">
+                            <p class="section__list-item__text important-things__list-item__text">
+                                Monthly payments on leases are generally 20% - 30% cheaper than loans
+                            </p>
+                        </li>
+                        <li class="important-things__list-item">
+                            <img src="img/important-things-2.jpg" alt="" class="important-things__list-img">
+                            <p class="section__list-item__text important-things__list-item__text">
+                                You may be eligible for a tax break if you use the leased vehicle for business purposes
+                            </p>
+                        </li>
+                        <li class="important-things__list-item">
+                            <img src="img/important-things-3.jpg" alt="" class="important-things__list-img">
+                            <p class="section__list-item__text important-things__list-item__text">
+                                Easy to upgrade to the newest vehicle model every few years
+                            </p>
+                        </li>
+                        <li class="important-things__list-item">
+                            <img src="img/important-things-4.jpg" alt="" class="important-things__list-img">
+                            <p class="section__list-item__text important-things__list-item__text">
+                                There are often fees charged if you drive more than your lease's mileage allowance
+                            </p>
+                        </li>
+                    </ul>   
+
+                </div>
+            </section>
 
 
         </main>
