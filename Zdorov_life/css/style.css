@@ -37,6 +37,7 @@
     --color-black-purple: #262526;
     --color-gray-red: #9b9b9b;
     --color-black-blue: #2d2d2e;
+    --color-gray-white-red:  #dcdcdc;
 
     /*--- баллы --- */
     --count-basket: 20;
@@ -428,4 +429,55 @@ a{
     padding: 21px 0px;
     color: var(--color-gray-middle-dark);
     font-family:'Proxima Nova Regular';
+}
+
+.adversting__banners__slider{
+    max-width: 979px;
+    overflow: hidden;
+    position: relative;
+}
+
+.adversting__banners__slider-squere{
+    display: flex;
+    
+    
+    
+}
+
+.adversting__banners__slider-pagination{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.slider__pagination-btn{
+    border-radius: 14px;
+    width: 14px;
+    background-color: var(--color-gray-white-red);
+    height: 14px;
+    border: none;
+}
+
+.slider__pagination-btn_active{
+    width: 27px;
+    border-radius: 90px;
+    background: var(--color-green-main);
+}
+
+.btnSlideOff{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.adversting__banners__slider-btn{
+    position: absolute;
+    top: 44%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 8px;
 }
