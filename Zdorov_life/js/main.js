@@ -10,10 +10,12 @@ const textbox_search = document.querySelector(".header__middle__form-search"),
 
     let count = 0;
 
-    
+// - убираем placeholder при вводе текста - 
 textbox_search.addEventListener('input',() =>{
     placeholder_search.classList.add('form-placeholder-off')
 })
+
+// - добавляем обратно при условии что поле пусто -
 textbox_search.addEventListener('blur',function(event){
     var inputValue = event.target.value;
     if(inputValue.trim() == ''){
@@ -22,7 +24,7 @@ textbox_search.addEventListener('blur',function(event){
     
 })
 
-
+// - адаптируем изображения слайдера под контейнер -
 function init(){
     width =  adversting__banners__slider.offsetWidth;
     slider__squere.style.width = width*images.length+ 'px';
@@ -33,6 +35,7 @@ function init(){
     });
     scrollSlide(count)
 }
+
 
 nextSlide.addEventListener('click', function () {
     count++;
@@ -64,6 +67,7 @@ returnSlide.addEventListener('click', function (){
     
 })
 
+// - перемещаем слайды на n-кликов*ширину -
 function scrollSlide(count){
     slider__squere.style.transform = 'translate(-'+ count * width + 'px';
 }
@@ -75,8 +79,7 @@ window.addEventListener('pageshows', () => init())
 window.addEventListener('beforeunload',() => init())
 
 
-
-
+// - активация пагинации - 
 slider__pagination_btn.forEach(function(element ,index){
     element.addEventListener('click', ()=>{
         pag_active(index)
