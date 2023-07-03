@@ -6,7 +6,9 @@ const textbox_search = document.querySelector(".header__middle__form-search"),
     nextSlide = document.querySelector('.adversting__banners__slider-btnNext'),
     returnSlide = document.querySelector('.adversting__banners__slider-btnReturn'),
     slider__pagination_btn = document.querySelectorAll('.adversting__banners__slider-pagination button'),
-    adversting__banners__slider = document.querySelector('.adversting__banners__slider');
+    adversting__banners__slider = document.querySelector('.adversting__banners__slider'),
+    btn__scroll = document.querySelector('.scroller__product__visible-btnScroll'),
+    scroll__slide = document.querySelectorAll('.scroller__product__visible-wrapper');
 
     let count = 0;
 
@@ -94,3 +96,11 @@ function pag_active(count){
     })
     slider__pagination_btn[count].classList.add('slider__pagination-btn_active')
 }
+
+btn__scroll.addEventListener('mousedown', ()=>{
+    document.addEventListener('mousedown',function(event){
+        var x = event.clientX;
+        btn__scroll.style.transform = 'translate(-'+ x + 'px )';
+    })
+   
+})

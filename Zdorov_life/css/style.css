@@ -498,9 +498,9 @@ a{
     background-color: var(--color-black-blue);
     opacity: 0;
     visibility: hidden;
-   position: absolute;
-   top: 50%;
-   left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 } */
 
 .slide:hover{
@@ -525,4 +525,83 @@ a{
 
 .adversting__banners__img{
     width: 100%;
+}
+
+.scroller__product__tittle{
+    font-size: 3rem;   
+    line-height: 3.625rem;    
+    font-family:'Proxima Nova Extrabold'; 
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.scroller__product__visible-Area{
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroller__product__visible-wrapper{
+    display: flex;
+    gap: 29px;
+    margin-bottom: 32px;
+}
+
+.scroller__product__visible-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+}
+.scroller__product__tittle-word{
+    color: var(--color-green-main);
+    font-family:'Proxima Nova Light' ;
+}
+
+.scroller__product__visible-name{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--color-black-purple);
+    text-align: center; 
+}
+
+.scroller__product__visible-textWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    max-width: 250px;
+    width: 100%;
+    padding: 0px 26px;
+}
+
+.scroller__product__visible-img{
+    padding: 0px 95px 0px;
+    
+}
+
+.scroller__product__visible-scrollLine{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-gray-white);
+    margin-bottom: 65px;
+}
+
+.scroller__product__visible-btnScroll{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 174px;
+    height: 15px;
+    border-radius: 12px;
+    background-color: var(--color-green-main);
+    border: none;
+    align-items: center;
+    transform: translateX(0px);
+    transition: all ease-in-out 1s;
 }
